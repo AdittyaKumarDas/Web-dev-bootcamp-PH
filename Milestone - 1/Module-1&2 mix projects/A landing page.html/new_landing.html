@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Hero Section</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #3ba0d2, #7dc8be);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar .menu li {
+            cursor: pointer;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin: 20px 0 40px 0;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 0 50px 50px 0;
+            background-color: white;
+            color: #3ba0d2;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Topic</div>
+            <ul class="menu">
+                <li>Home</li>
+                <li>Browse Topics</li>
+                <li>How it works</li>
+                <li>FAQs</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Discover. Learn. Enjoy</h1>
+            <p>Platform for creatives around the world</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Design, Code, Marketing, Finance ...">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

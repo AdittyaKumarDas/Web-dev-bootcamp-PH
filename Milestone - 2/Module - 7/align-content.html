@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Align-Content Example</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-auto-rows: 100px;
+            height: 400px;
+            /* container এর উচ্চতা বেশি রাখা হয়েছে */
+
+            background-color: #f2f2f2;
+            gap: 10px;
+
+            align-content: center;
+            /* এখানে মূল জিনিস */
+        }
+
+        .item {
+            background-color: steelblue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>align-content: space-between</h2>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+</body>
+
+</html>

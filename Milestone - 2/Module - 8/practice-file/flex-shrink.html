@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Grow vs Shrink</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            border: 3px solid black;
+            height: 150px;
+        }
+
+        .box {
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .a {
+            background-color: crimson;
+            flex-grow: 1;
+            flex-shrink: 4;
+        }
+
+        .b {
+            background-color: royalblue;
+            flex-grow: 2;
+            /* flex-shrink: 2; */
+        }
+
+        .c {
+            background-color: forestgreen;
+            flex-grow: 1;
+            flex-shrink: 4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+    </div>
+
+</body>
+
+</html>

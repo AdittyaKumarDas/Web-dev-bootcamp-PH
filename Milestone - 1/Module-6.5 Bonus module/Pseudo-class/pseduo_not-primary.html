@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            display: block;
+            background-color: blueviolet;
+            padding: 10px;
+            border: 4px solid black;
+            margin-top: 10px;
+        }
+
+        button :not(.btn) {
+            background-color: aqua;
+            padding: 10px;
+            border: 4px solid black;
+            margin-top: 10px;
+        }
+
+        div {
+            background-color: burlywood;
+            width: 600px;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+
+        div :not(article) {
+            color: brown;
+            font-size: 20px;
+        }
+
+        .art {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .art2 {
+            color: blue;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .art2 :not(.art) {
+            color: brown;
+            font-weight: 700;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body style="background-color: darkgrey;">
+    <button>Submit</button>
+    <button class="btn">sign up</button>
+    <button class="btn">sign in</button>
+    <button>Registar</button>
+    <button>Forgot password</button>
+    <button>Come in</button>
+
+    <div>
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum!</article>
+        <span>Lorem, ipsum.</span>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    </div>
+    <section class="art2">
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <article class="art">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum!</article>
+        <span>Lorem, ipsum.</span>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+    </section>
+</body>
+
+</html>

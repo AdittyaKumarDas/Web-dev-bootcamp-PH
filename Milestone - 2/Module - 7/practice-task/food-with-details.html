@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image {
+            width: 30%;
+        }
+
+        .food {
+            display: flex;
+            align-items: center;
+            margin-top: 3rem;
+            padding: 3rem;
+            gap: 1em;
+        }
+
+        .btn {
+            background-color: dodgerblue;
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+
+        .details {
+            background-color: azure;
+        }
+
+        /* For smartphone */
+        @media screen and (max-width:576px) {
+            .food {
+                flex-direction: column;
+            }
+
+            .image {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="food details">
+            <img class="image" src="./burger (2).jpg" alt="">
+            <div>
+                <h2>A Burger For sale</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, maxime accusamus laudantium
+                    voluptatum
+                    doloremque, voluptates quia quas consequatur debitis vitae voluptatem earum totam error eveniet quo
+                    consectetur incidunt quos hic.</p>
+                <button class="btn">Read more</button>
+            </div>
+        </div>
+
+        <div class="food details">
+            <img class="image" src="./icecream.jpg" alt="">
+            <div>
+                <h2>Ice cream for sale</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, illum ea non quod rem animi aliquam
+                    modi
+                    esse. Ipsa ex accusantium aliquam vero. Ex unde ullam ad asperiores dicta vero.</p>
+                <button class="btn">Read more</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            border: 2px solid black;
+            height: 100px;
+        }
+
+        .box {
+            height: 100%;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+
+        .a {
+            background: red;
+            flex: 1 1 100px;
+            /* grow:1, shrink:1, basis:100px */
+        }
+
+        .b {
+            background: blue;
+            flex: 1 1 100px;
+            /* grow:2, shrink:1, basis:100px */
+        }
+
+        .c {
+            background: green;
+            flex: 1 2 100px;
+            /* grow:1, shrink:2, basis:100px */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(85, 1fr);
+            gap: 0.5em;
+        }
+
+        .one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            background-color: crimson;
+            grid-column: 1;
+            grid-row: 1/85;
+            border-radius: 10px;
+        }
+
+        .two {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkorange;
+            font-size: 2rem;
+            font-weight: bold;
+            grid-column: 2/4;
+            grid-row: 1/40;
+            border-radius: 10px;
+        }
+
+        .three {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+            font-size: 2rem;
+            font-weight: bold;
+            grid-column: 2;
+            grid-row: 40/85;
+            border-radius: 10px;
+        }
+
+        .four {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+            font-size: 2rem;
+            font-weight: bold;
+            grid-column: 3;
+            grid-row: 40/85;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: auto;
+            }
+
+            /* নিচের মতো করে সব ডিভের grid position রিসেট করো */
+            .one {
+                grid-column: 1/2;
+                grid-row: 1/30;
+                gap: 10px;
+            }
+
+            .two {
+                grid-column: 1/2;
+                grid-row: 30/60;
+            }
+
+            .three {
+                grid-column: 1/2;
+                grid-row: 60/90;
+            }
+
+            .four {
+                grid-column: 1/2;
+                grid-row: 90/120;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+    </div>
+</body>
+
+</html>

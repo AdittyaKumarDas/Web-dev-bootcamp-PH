@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form fieldset label {
+            display: block;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 19px;
+            text-align: center;
+            color: rgb(12, 94, 96);
+            /* background-color: rgb(178, 223, 223);
+            margin-right: 300px;
+            margin-left: 300px ;
+            border-radius: 10px; */
+        }
+
+        .input-field {
+            border-radius: 10px;
+            border-width: 2px;
+            border-color: blue;
+            width: 300px;
+            margin-left: 450px;
+            text-align: center;
+            background-color: rgb(224, 232, 240);
+        }
+
+        .gender-item {
+            margin-left: 540px;
+            background-color: antiquewhite;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        textarea {
+            margin-left: 350px;
+            width: 500px;
+            height: 200px;
+            border-radius: 5px;
+        }
+
+        .submit-button {
+            margin-left: 550px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: darkseagreen;
+        }
+
+        .submit-button:hover {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(228, 225, 221);">
+    <form action="">
+        <fieldset>
+            <legend>A Registration page</legend>
+
+            <label for="name">Enter Your Name</label>
+            <input class="input-field" required type="text" id="name" placeholder="Enter Your Name">
+
+            <label for="email">Enter Your email</label>
+            <input class="input-field" required type="email" id="email" placeholder="Enter Your Email">
+
+            <label for="gender-item">Your Gender</label>
+            <input class="gender-item" type="radio" id="gender" name="gender" required> Male
+            <input type="radio" name="gender" id="gender" required> Female
+
+            <label for="phone">Enter Your phone</label>
+            <input class="input-field" type="tel" name="telephone" id="phone" placeholder="Enter Your Phone" required>
+
+            <label for="feedback">Your Feedback</label>
+            <textarea rows="10" name="" id="feedback" maxlength="500">
+            </textarea>
+
+            <input class="submit-button" type="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>

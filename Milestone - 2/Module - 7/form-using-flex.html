@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid black; */
+            height: 600px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 500px;
+            margin-right: 450px;
+            margin-left: 450px;
+            padding: 50px;
+        }
+
+        .input {
+            width: 350px;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 8px;
+        }
+
+        label {
+            margin-top: 30px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        a {
+            margin-left: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <form class="container">
+            <h1>A login form</h1>
+            <label for="">Your Name</label>
+            <input class="input" type="text" placeholder="your name">
+
+            <label for="">Your email</label>
+            <input class="input" type="text" placeholder="Your email">
+
+            <label for="">Your password</label>
+            <input class="input" type="password" name="" id="" placeholder="Password">
+
+            <button class="btn"><a href="https://www.google.com/">sign in</a></button>
+
+            <div class="btn">
+                <a href="">Forget password?</a>
+                <a href="">Sign Up</a>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,
+        label {
+            display: block;
+            margin-top: 30px;
+            width: 400px;
+            height: 30px;
+            font-size: 40px;
+        }
+
+        input:checked+label {
+            color: green;
+            font-weight: bold;
+        }
+
+        .btn {
+            width: 500px;
+            border: 2px solid black;
+        }
+
+        input:disabled {
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body style="background-color: darkgray;">
+    <div>
+
+        <input type="checkbox" name="" id="gender1">
+        <label for="gender1">male</label>
+
+
+        <input type="checkbox" name="" id="gender2">
+        <label for="gender2">female</label>
+
+        <label for="name">Enter Your name</label>
+        <input class="btn" type="text" name="" placeholder="Can't write there" id="name" disabled>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            grid-area: header;
+            background-color: rgb(185, 210, 218);
+            border-radius: 10px;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: beige;
+            border-radius: 10px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: rgb(202, 238, 147);
+            height: 50vh;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+
+        .aside {
+            grid-area: aside;
+            background-color: rgb(129, 167, 238);
+            border-radius: 10px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgb(237, 232, 164);
+            border-radius: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav main aside"
+                "footer footer footer"
+            ;
+
+            gap: 1rem;
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "aside"
+                    "footer"
+                ;
+            }
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header class="header">
+        <h1>This is Header part</h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="">about</a></li>
+            <li><a href="">contacts</a></li>
+            <li><a href="">Explore</a></li>
+            <li><a href="">Lisence</a></li>
+            <li><a href="">More</a></li>
+            <li><a href="">Log in</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <h1>This is main part</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, ipsam omnis! Quo laboriosam obcaecati
+            repellat, commodi omnis unde deleniti repudiandae pariatur laudantium nostrum soluta nobis nulla id harum
+            dolore! Officia praesentium ipsum sint perferendis est dolore exercitationem. Quis tenetur molestias soluta
+            minus dolorum impedit harum necessitatibus qui, corporis eius quod!</p>
+    </main>
+
+    <aside class="aside">
+        <ul>
+            <li><a href="">More</a></li>
+            <li><a href="">For order</a></li>
+            <li><a href="">See details</a></li>
+            <li><a href="">Order section</a></li>
+            <li><a href="">Order History</a></li>
+        </ul>
+    </aside>
+
+    <footer class="footer">
+        <h1>This is footer part</h1>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>label,
+        input {
+            display: block;
+            line-height: 40px;
+        }
+
+        input:focus {
+            color: brown;
+            font-size: 20px;
+            border: 4px solid blue;
+            outline: none;
+        }
+
+
+        body {
+            background-color: grey;
+        }
+
+        #sign:active {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="name">Enter Name</label>
+        <input type="text" id="name" placeholder="Enter Your name">
+        <label for="">Enter Number</label>
+        <input type=" tel" name="" id="" placeholder="Number">
+        <input id="sign" type="button" value="sign up">
+    </div>
+</body>
+
+</html>

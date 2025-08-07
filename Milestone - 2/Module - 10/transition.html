@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .inner{
+            border: 2px solid slateblue;
+            background-color: cadetblue;
+            height: 20vh;
+            width: 10%;
+            /* transition: width 5s; */
+            /* transition: height 5s; */
+            /* transition: height 5s linear 3s; */
+            /* transition: width 5s linear 3s; */
+            transition: transform 3s step-end 2s;
+        }
+
+        .inner:hover{
+            transform:scale(1.25) rotate(45deg) translate(100px);
+            /* width: 40%; */
+            /* height: 40vh; */
+        }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Transform:chage the shape</li>
+      <li>
+        Translate: means it is a value of the transform style rule.This means
+        you move either x or y or both axis
+      </li>
+      <li>Transition</li>
+    </ul>
+
+    <div class="container">
+        <div class="inner">inner-1</div>
+        <div class="inner">inner-2</div>
+        <div class="inner">inner-3</div>
+  </body>
+</html>

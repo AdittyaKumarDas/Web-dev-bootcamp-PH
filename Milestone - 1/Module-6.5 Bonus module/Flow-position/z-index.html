@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo {
+            height: 300px;
+            width: 400px;
+        }
+
+        .boy {
+            border-radius: 360px;
+            border: 2px solid black;
+            position: relative;
+            top: 380px;
+            z-index: 4;
+        }
+
+        .ring {
+            border-radius: 360px;
+            border: 2px solid black;
+            position: relative;
+            top: 250px;
+            z-index: 3;
+        }
+
+        .water {
+            border-radius: 360px;
+            border: 2px solid black;
+            position: relative;
+            z-index: 2;
+        }
+
+        .container {
+            border: 2px dashed black;
+            width: 500px;
+        }
+
+        .container2 {
+            border: 5px dotted navy;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Z-Index</h1>
+    <div class="container2">
+        <div class="container">
+            <img class="boy photo" src="../Photo/boy.jpg" alt="">
+        </div>
+
+        <div class="container">
+            <img class="ring photo" src="../Photo/ring.jpg" alt="">
+        </div>
+
+        <div class="container">
+            <img class="water photo" src="../Photo/water.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
