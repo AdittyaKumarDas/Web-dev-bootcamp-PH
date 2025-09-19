@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="name-input" type="text" placeholder="Enter Name" />
+    <button id="btn-submit">submit</button>
+    <div id="name-container"></div>
+
+    <script>
+      document
+        .getElementById("btn-submit")
+        .addEventListener("click", function () {
+          const inputField = document.getElementById("name-input");
+
+          if (inputField.value === "") {
+            alert("Please enter name");
+          } else {
+            //Get the parent element
+            const nameContainer = document.getElementById("name-container");
+
+            // Create the child element
+
+            const childElement = document.createElement("p");
+
+            childElement.innerText = inputField.value;
+
+            // append the child element
+
+            nameContainer.appendChild(childElement);
+            inputField.value = "";
+
+            const btn = document.getElementById("btn-submit");
+          }
+        });
+    </script>
+  </body>
+</html>

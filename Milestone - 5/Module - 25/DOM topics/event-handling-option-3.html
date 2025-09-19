@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-yellow">click here yellow</button>
+    <button id="btn-gold">click here gold</button>
+    <button id="btn-skyblue">Click Here skyblue</button>
+    <button id="btn-white">click here white</button>
+
+    <script>
+      // Option - 3 : Use of addEventListener("eventType", handler)
+      document
+        .getElementById("btn-yellow")
+        .addEventListener("click", function makeYellow() {
+          document.body.style.backgroundColor = "yellow";
+        });
+
+      document
+        .getElementById("btn-gold")
+        .addEventListener("click", function () {
+          document.body.style.backgroundColor = "gold";
+        });
+
+      document
+        .getElementById("btn-skyblue")
+        .addEventListener("mouseover", function () {
+          document.body.style.backgroundColor = "skyblue";
+        });
+
+      document
+        .getElementById("btn-white")
+        .addEventListener("mouseout", function () {
+          document.body.style.backgroundColor = "red";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="makeYellow()">Just Click for lightgreen</button>
+    <button onclick="makeColor()">Just Click for lightblue</button>
+
+    <button id="btn-blue">Just Click for blue</button>
+    <button id="btn-grey">just click for grey</button>
+
+    <script src="./JavaScript/js-file.js"></script>
+
+    <script>
+      // Option - 2 --> system - 1
+      const btnBlue = document.getElementById("btn-blue");
+
+      btnBlue.onclick = function makeBlue() {
+        document.body.style.backgroundColor = "skyblue";
+      };
+
+      // Option - 2 --> system - 2  --> This system rarely Used
+      const btnGrey = document.getElementById("btn-grey");
+
+      function makeGrey() {
+        document.body.style.backgroundColor = "grey";
+      }
+      btnGrey.onclick = makeGrey;
+    </script>
+  </body>
+</html>

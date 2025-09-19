@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-event">Click Here</button>
+    <input id="input-name" placeholder="Your Name" type="text" />
+    <input id="input-email" placeholder="Your email" type="text" />
+
+    <script>
+      //   document
+      //     .getElementById("btn-event")
+      //     .addEventListener("mouseover", function () {
+      //       console.log("Mouse Enter");
+      //     });
+      document
+        .getElementById("btn-event")
+        .addEventListener("mouseenter", function () {
+          console.log("Mouse Enter");
+        });
+
+      document
+        .getElementById("input-name")
+        .addEventListener("focus", function () {
+          console.log("This is in Focus name");
+        });
+      document
+        .getElementById("input-email")
+        .addEventListener("focus", function () {
+          console.log("This is in Focus email");
+        });
+      document
+        .getElementById("input-name")
+        .addEventListener("blur", function () {
+          console.log("This is blur name");
+        });
+      document
+        .getElementById("input-email")
+        .addEventListener("blur", function () {
+          console.log("This is blur email");
+        });
+    </script>
+  </body>
+</html>

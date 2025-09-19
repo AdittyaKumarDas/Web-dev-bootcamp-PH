@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #my-country {
+        color: blue;
+        font-size: 30px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li id="my-country">Bangladesh</li>
+        <li class="hindu">India</li>
+        <li>Pakistan</li>
+        <li class="hindu">Sri Lanka</li>
+        <li class="hindu">Nepal</li>
+      </ul>
+    </header>
+
+    <script>
+      const country = document.getElementById("my-country");
+      console.log(country.innerText);
+
+      //   Change Value of a document for ID
+      country.innerText = "Bangladesh for 1971";
+
+      console.log(country.innerText);
+
+      const hinduCountry = document.getElementsByClassName("hindu");
+
+      //   console.log(hinduCountry);
+
+      for (const hindus of hinduCountry) {
+        console.log(hindus);
+        console.log(hindus.innerText);
+      }
+    </script>
+  </body>
+</html>

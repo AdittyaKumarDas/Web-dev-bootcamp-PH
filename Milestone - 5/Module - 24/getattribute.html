@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .for-ol {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: brown;
+      }
+
+      #for-p {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: blueviolet;
+      }
+
+      #for-heading {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: cadetblue;
+      }
+
+      .bg-color {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2 id="for-heading">This is Paragraph tag in below</h2>
+        <p id="for-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          nesciunt voluptas dicta iure possimus consectetur excepturi inventore
+          odio laboriosam accusantium recusandae beatae porro, voluptates,
+          delectus exercitationem laborum modi vitae assumenda, natus ad? Quo
+          veritatis, eaque nemo commodi quis odit, sapiente optio ipsa porro
+          dolorum quidem placeat rem atque vitae dolorem.
+        </p>
+        <ol class="for-ol">
+          <li>Web Development</li>
+          <li>Machine Learning</li>
+          <li>Artifical Intelligence</li>
+          <li>Data Science</li>
+          <li>Data Analytics</li>
+        </ol>
+
+        <ol class="for-ol">
+          <li>Graphic Design</li>
+          <li>digital marketing</li>
+          <li>SEO</li>
+          <li>Advanced SEO</li>
+          <li>Data Driven Class</li>
+        </ol>
+      </section>
+    </main>
+
+    <script>
+      const forHeading = document.getElementById("for-heading");
+
+      forHeading.style.backgroundColor = "darkblue";
+    </script>
+  </body>
+</html>

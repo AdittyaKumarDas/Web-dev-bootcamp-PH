@@ -1,0 +1,4 @@
+1. Tailwind CSS CDN Connect
+2. DaisyUI CDN Connect
+3. Outfit font Connect
+4. font awesome CDN Connect for log out button

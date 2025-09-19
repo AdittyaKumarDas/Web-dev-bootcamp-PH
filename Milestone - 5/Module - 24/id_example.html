@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Hello World</h1>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+      function changeText() {
+        // ID দিয়ে element খুঁজে আনা
+        let heading = document.getElementById("title");
+        // এর ভেতরের লেখা পরিবর্তন করা
+        heading.innerText = "Changed by ID!";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Events Example</title>
+  </head>
+  <body>
+    <button id="btn">Click Me</button>
+    <p id="text">Hello!</p>
+
+    <script>
+      let btn = document.getElementById("btn");
+      let text = document.getElementById("text");
+
+      btn.addEventListener("click", function () {
+        text.innerHTML = "Button এ ক্লিক করা হয়েছে!";
+      });
+    </script>
+  </body>
+</html>

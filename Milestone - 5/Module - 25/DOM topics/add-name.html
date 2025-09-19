@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Add Name</h1>
+    <input id="input-name" type="text" placeholder="Enter Name" />
+    <button id="btn-name">Add name</button>
+    <div id="name-container"></div>
+
+    <script>
+      document
+        .getElementById("btn-name")
+        .addEventListener("click", function () {
+          const inputName = document.getElementById("input-name");
+          const inputNameValue = inputName.value;
+
+          //Get the parent Container
+
+          const parentContainer = document.getElementById("name-container");
+
+          //   Create the child element
+
+          const p = document.createElement("p");
+          p.innerText = inputNameValue;
+
+          //Append child in parent node
+
+          parentContainer.append(p);
+          inputName.value = "";
+        });
+    </script>
+  </body>
+</html>

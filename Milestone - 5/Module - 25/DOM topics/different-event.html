@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="mouse-event">Click here for event</button>
+
+    <script>
+      // document
+      //   .getElementById("mouse-event")
+      //   .addEventListener("mouseenter", function () {
+      //     console.log("Mouse event Start");
+      //   });
+      //   document
+      //     .getElementById("mouse-event")
+      //     .addEventListener("mousemove", function () {
+      //       console.log("Mouse event Start");
+      //     });
+      document
+        .getElementById("mouse-event")
+        .addEventListener("mouseout", function () {
+          console.log("Mouse event Start");
+        });
+    </script>
+  </body>
+</html>

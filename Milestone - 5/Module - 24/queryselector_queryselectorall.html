@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>This is Header Part</h1>
+      <section id="list_of_name">
+        <ul>
+          <li>Adiitya</li>
+          <li>Dipto</li>
+          <li>Adi</li>
+        </ul>
+        <ol>
+          <li>Dhaka</li>
+          <li>Chattogram</li>
+          <li>Rajshahi</li>
+          <li>Khulna</li>
+          <li>Barisal</li>
+        </ol>
+      </section>
+    </header>
+
+    <!-- querySelectorAll object -->
+    <script>
+      const unOrdered = document.querySelectorAll("#list_of_name ul li");
+
+      for (const item of unOrdered) {
+        console.log(item.innerText);
+      }
+
+      const ordered = document.querySelectorAll("#list_of_name ol li");
+
+      for (const item of ordered) {
+        console.log(item.innerText);
+      }
+
+      const newList = document.querySelectorAll("#list_of_name li");
+
+      for (const item of newList) {
+        console.log(item.innerText);
+      }
+    </script>
+
+    <!-- qureySelector object -->
+    <script>
+      const oList = document.querySelector("#list_of_name ol");
+
+      console.log(oList.innerText);
+
+      const uList = document.querySelector("#list_of_name ul");
+
+      console.log(uList.innerText);
+
+      const nList = document.querySelector("#list_of_name li");
+
+      console.log(nList.innerText);
+    </script>
+  </body>
+</html>

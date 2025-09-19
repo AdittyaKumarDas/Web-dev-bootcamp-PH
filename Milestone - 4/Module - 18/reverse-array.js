@@ -1,12 +1,24 @@
-const fruits = ["Apple", "Guava", "Watermelon", "pineapple", "orange"];
+const numbers = [10, 20, 30, 40, 50, 60];
 
-const reverse = [];
+let reverse = [];
 
-// for (let i = fruits.length - 1; i >= 0; i--) {
-//   reverse.push(fruits[i]);
+// ⁡⁢⁣⁣using push function⁡
+// for( let i = numbers.length - 1; i >= 0; i--){
+//   reverse.push(numbers[i]);
 // }
 
-for(let i = 0; i<)
+// ⁡⁢⁣⁣Using unshift function⁡
+// for(let i = 0; i<numbers.length; i++){
+//   reverse.unshift(numbers[i]);
+// }
 
-console.log(reverse);
-      
+// ⁡⁢⁣⁡⁢⁣⁣Using unshift function⁡
+// for(const num of numbers){
+//   reverse.unshift(num);
+// }
+
+console.log(numbers);
+
+// ⁡⁢⁣⁣Using reverse() function⁡
+console.log(numbers.reverse());
+// console.log(reverse);
